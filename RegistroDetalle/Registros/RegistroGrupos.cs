@@ -23,6 +23,7 @@ namespace RegistroDetalle.Registros
         Grupos gruo = new Grupos(); 
         private void Idbutton_Click(object sender, EventArgs e)
         {
+            if(ValidId() && ValidBus())
             Pasar(GrupoBll.Buscar(u.StringToInt(IdtextBox.Text)));
         }
 
@@ -35,11 +36,19 @@ namespace RegistroDetalle.Registros
             EstudiantedataGridView.DataSource = gr.Estudiantes;
         }
 
+        private void Nuevobutton_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
             LlenarClase(gruo);
-            GrupoBll.Guardar(gruo);
-            MessageBox.Show("Guardado con exito!!!");
+            if (ValidTextB() && ValidExi(NombretextBox.Text))
+            {
+                GrupoBll.Guardar(gruo);
+                MessageBox.Show("Guardado con exito!!!");
+            }
         }
 
         private void LlenarClase(Grupos grup)
@@ -49,8 +58,11 @@ namespace RegistroDetalle.Registros
 
         private void Eliminarbutton_Click(object sender, EventArgs e)
         {
-            GrupoBll.Eliminar(u.StringToInt(IdtextBox.Text));
-            MessageBox.Show("Eliminado con exito!!!");
+            if (ValidId() && ValidBus())
+            {
+                GrupoBll.Eliminar(u.StringToInt(IdtextBox.Text));
+                MessageBox.Show("Eliminado con exito!!!");
+            }
         }
 
         private void LlenarCombo()
@@ -71,5 +83,62 @@ namespace RegistroDetalle.Registros
             EstudiantedataGridView.DataSource = null;
             EstudiantedataGridView.DataSource = gruo.Estudiantes;
         }
+
+        private bool ValidId()
+        {
+            if(string.IsNullOrEmpty(IdtextBox.Text))
+            {
+                MessageBox.Show("Por Favor Ingrese El Id");
+                return false;
+            }else
+            {
+                return true;
+            }
+        }
+
+        private bool ValidBus()
+        {
+            if(GrupoBll.Buscar(u.StringToInt(IdtextBox.Text)) == null)
+            {
+                MessageBox.Show("Este Grupo no existe");
+                return false;
+            }
+            return true;
+        }
+
+        private void Clear()
+        {
+            IdtextBox.Clear();
+            NombretextBox.Clear();
+            NombreerrorProvider.Clear();
+            EstudiantedataGridView.DataSource = null;
+        }
+        
+        private bool ValidTextB()
+        {
+            if(string.IsNullOrEmpty(NombretextBox.Text))
+            {
+                NombreerrorProvider.SetError(NombretextBox, "Ingrese Nombre");
+                MessageBox.Show("Llenar todo los campos");
+            }
+            if(string.IsNullOrEmpty(NombretextBox.Text))
+            {
+                NombreerrorProvider.Clear();
+                NombreerrorProvider.SetError(NombretextBox, "Ingrese Nombre");
+                return false;
+            }
+            return true;
+        }
+
+        private bool ValidExi(string au)
+        {
+            if(GrupoBll.GetListaNombre(au).Count() > 0)
+            {
+                MessageBox.Show("Este nombre existe");
+                return false;
+            }
+            return true;
+        }
     }
-}
+ }
+

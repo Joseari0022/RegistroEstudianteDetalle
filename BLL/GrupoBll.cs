@@ -58,5 +58,13 @@ namespace BLL
             lista = db.Grupos.ToList();
             return lista;
         }
+
+        public static List<Grupos> GetListaNombre(string aux)
+        {
+            List<Grupos> lista = new List<Grupos>();
+            var db = new SistemaGrupoDb();
+            lista = db.Grupos.Where(p => p.Nombres == aux).ToList();
+            return lista;
+        }
     }
 }

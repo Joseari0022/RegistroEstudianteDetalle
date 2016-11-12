@@ -50,7 +50,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(499, 223);
+            this.groupBox1.Size = new System.Drawing.Size(481, 187);
             this.groupBox1.TabIndex = 78;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lista";
@@ -58,7 +58,7 @@
             // GrupodataGridView
             // 
             this.GrupodataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GrupodataGridView.Location = new System.Drawing.Point(21, 66);
+            this.GrupodataGridView.Location = new System.Drawing.Point(6, 19);
             this.GrupodataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GrupodataGridView.Name = "GrupodataGridView";
             this.GrupodataGridView.RowTemplate.Height = 24;
@@ -83,7 +83,7 @@
             // 
             this.Nuevobutton.Image = ((System.Drawing.Image)(resources.GetObject("Nuevobutton.Image")));
             this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Nuevobutton.Location = new System.Drawing.Point(28, 370);
+            this.Nuevobutton.Location = new System.Drawing.Point(29, 333);
             this.Nuevobutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(103, 41);
@@ -96,7 +96,7 @@
             // 
             this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
             this.Eliminarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Eliminarbutton.Location = new System.Drawing.Point(284, 370);
+            this.Eliminarbutton.Location = new System.Drawing.Point(280, 333);
             this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(103, 41);
@@ -110,7 +110,7 @@
             // 
             this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
             this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Guardarbutton.Location = new System.Drawing.Point(156, 370);
+            this.Guardarbutton.Location = new System.Drawing.Point(152, 333);
             this.Guardarbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(103, 41);
@@ -140,7 +140,7 @@
             // 
             // NombretextBox
             // 
-            this.NombretextBox.Location = new System.Drawing.Point(28, 88);
+            this.NombretextBox.Location = new System.Drawing.Point(29, 89);
             this.NombretextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(183, 22);
@@ -158,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 422);
+            this.ClientSize = new System.Drawing.Size(529, 399);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Idbutton);
             this.Controls.Add(this.Nuevobutton);
@@ -169,7 +169,7 @@
             this.Controls.Add(this.NombretextBox);
             this.Controls.Add(this.IdtextBox);
             this.Name = "RegistroEstudiantes";
-            this.Text = "Form1";
+            this.Text = "RegistroEstudiante";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GrupodataGridView)).EndInit();
             this.ResumeLayout(false);
