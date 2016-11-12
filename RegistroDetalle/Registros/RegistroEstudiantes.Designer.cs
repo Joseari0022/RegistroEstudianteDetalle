@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroEstudiantes));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.GrupodataGridView = new System.Windows.Forms.DataGridView();
@@ -39,8 +40,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.NombretextBox = new System.Windows.Forms.TextBox();
             this.IdtextBox = new System.Windows.Forms.TextBox();
+            this.NombreerrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GrupodataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NombreerrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -91,6 +94,7 @@
             this.Nuevobutton.Text = "Nuevo";
             this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Nuevobutton.UseVisualStyleBackColor = true;
+            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
             // Eliminarbutton
             // 
@@ -154,6 +158,10 @@
             this.IdtextBox.Size = new System.Drawing.Size(100, 22);
             this.IdtextBox.TabIndex = 70;
             // 
+            // NombreerrorProvider
+            // 
+            this.NombreerrorProvider.ContainerControl = this;
+            // 
             // RegistroEstudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -172,6 +180,7 @@
             this.Text = "RegistroEstudiante";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GrupodataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NombreerrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,6 +198,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox NombretextBox;
         private System.Windows.Forms.TextBox IdtextBox;
+        private System.Windows.Forms.ErrorProvider NombreerrorProvider;
     }
 }
 

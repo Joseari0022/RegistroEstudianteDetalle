@@ -50,5 +50,13 @@ namespace BLL
             lista = db.Estudiantes.ToList();
             return lista;
         }
+
+        public static List<Estudiantes> GetListaNombre(string aux)
+        {
+            List<Estudiantes> lista = new List<Estudiantes>();
+            var db = new SistemaGrupoDb();
+            lista = db.Estudiantes.Where(p => p.Nombres == aux).ToList();
+            return lista;
+        }
     }
 }
