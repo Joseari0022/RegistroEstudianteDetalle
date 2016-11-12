@@ -84,7 +84,7 @@ namespace RegistroDetalle
         {
             if (GrupoBll.Buscar(u.StringToInt(IdtextBox.Text)) == null)
             {
-                MessageBox.Show("Este Grupo no existe");
+                MessageBox.Show("Este Estudiante no existe");
                 return false;
             }
             return true;

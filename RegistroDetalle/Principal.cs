@@ -37,5 +37,12 @@ namespace RegistroDetalle
             ce.MdiParent = this.MdiParent;
             ce.Show();
         }
+
+        private void gruposToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultaGrupos cg = new Consultas.ConsultaGrupos();
+            cg.MdiParent = this.MdiParent;
+            cg.Show();
+        }
     }
 }
