@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
 using BLL;
-using EjemploDetalle;
+using Detalle;
 
 namespace RegistroDetalle.Registros
 {

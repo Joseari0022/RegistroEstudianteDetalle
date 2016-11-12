@@ -30,5 +30,12 @@ namespace RegistroDetalle
             rg.MdiParent = this.MdiParent;
             rg.Show();
         }
+
+        private void estudiantesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultaEstudiantes ce = new Consultas.ConsultaEstudiantes();
+            ce.MdiParent = this.MdiParent;
+            ce.Show();
+        }
     }
 }
