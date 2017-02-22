@@ -36,13 +36,13 @@ namespace RegistroDetalle.Consultas
             ConsultaGrupodataGridView.DataSource = gru.Estudiantes;
         }
 
-        private void Llenar(string aux)
-        {
-            var grup = GrupoBll.GetListaNombre((FiltrotextBox.Text));
-            FiltrotextBox.Text = gru.Nombres;
-            ConsultaGrupodataGridView.DataSource = null;
-            ConsultaGrupodataGridView.DataSource = gru.Estudiantes;
-        }
+       //// private void Llenar(string aux)
+       // {
+       //     var grup = GrupoBll.GetListaNombre((FiltrotextBox.Text));
+       //     FiltrotextBox.Text = gru.Nombres;
+       //     ConsultaGrupodataGridView.DataSource = null;
+       //     ConsultaGrupodataGridView.DataSource = gru.Estudiantes;
+       // }
 
         private void ConsultaGrupos_Load(object sender, EventArgs e)
         {

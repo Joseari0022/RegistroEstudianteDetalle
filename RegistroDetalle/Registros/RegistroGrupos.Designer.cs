@@ -53,7 +53,7 @@
             this.groupBox1.Controls.Add(this.EstudiantescomboBox);
             this.groupBox1.Controls.Add(this.Agregarbutton);
             this.groupBox1.Controls.Add(this.EstudiantedataGridView);
-            this.groupBox1.Location = new System.Drawing.Point(32, 127);
+            this.groupBox1.Location = new System.Drawing.Point(24, 125);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -96,7 +96,7 @@
             // 
             this.Idbutton.Image = ((System.Drawing.Image)(resources.GetObject("Idbutton.Image")));
             this.Idbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Idbutton.Location = new System.Drawing.Point(243, 11);
+            this.Idbutton.Location = new System.Drawing.Point(235, 9);
             this.Idbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Idbutton.Name = "Idbutton";
             this.Idbutton.Size = new System.Drawing.Size(89, 43);
@@ -110,7 +110,7 @@
             // 
             this.Nuevobutton.Image = ((System.Drawing.Image)(resources.GetObject("Nuevobutton.Image")));
             this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Nuevobutton.Location = new System.Drawing.Point(32, 370);
+            this.Nuevobutton.Location = new System.Drawing.Point(24, 368);
             this.Nuevobutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(103, 41);
@@ -124,7 +124,7 @@
             // 
             this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
             this.Eliminarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Eliminarbutton.Location = new System.Drawing.Point(288, 370);
+            this.Eliminarbutton.Location = new System.Drawing.Point(280, 368);
             this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(103, 41);
@@ -138,7 +138,7 @@
             // 
             this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
             this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Guardarbutton.Location = new System.Drawing.Point(160, 370);
+            this.Guardarbutton.Location = new System.Drawing.Point(152, 368);
             this.Guardarbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(103, 41);
@@ -151,7 +151,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(30, 70);
+            this.label5.Location = new System.Drawing.Point(22, 68);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 17);
             this.label5.TabIndex = 73;
@@ -160,7 +160,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(30, 11);
+            this.label6.Location = new System.Drawing.Point(22, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(19, 17);
             this.label6.TabIndex = 72;
@@ -168,7 +168,7 @@
             // 
             // NombretextBox
             // 
-            this.NombretextBox.Location = new System.Drawing.Point(32, 88);
+            this.NombretextBox.Location = new System.Drawing.Point(24, 86);
             this.NombretextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(183, 22);
@@ -176,7 +176,7 @@
             // 
             // IdtextBox
             // 
-            this.IdtextBox.Location = new System.Drawing.Point(32, 30);
+            this.IdtextBox.Location = new System.Drawing.Point(24, 28);
             this.IdtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IdtextBox.Name = "IdtextBox";
             this.IdtextBox.Size = new System.Drawing.Size(100, 22);

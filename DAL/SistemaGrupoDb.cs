@@ -10,7 +10,7 @@ namespace DAL
 {
     public class SistemaGrupoDb : DbContext
     {
-        public SistemaGrupoDb() : base("name=ConStr")
+        public SistemaGrupoDb() : base("name = ConStr")
         {
 
         }
